@@ -1,0 +1,44 @@
+.home {
+    background-color: var(--tertiary-color);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__bkg {
+    background-color: var(--primary-color);
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+}
+
+.home__title {
+    margin: 0px;
+    margin-top: 20px;
+    z-index: 9;
+    font-size: 10rem;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    line-height: 8rem;
+    position: fixed;
+}
+
+.home__title > span {
+    color: var(--primary-color);
+    font-size: 15rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .home__title {
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .home__title > span {
+        font-size: 6rem;
+    }
+}
