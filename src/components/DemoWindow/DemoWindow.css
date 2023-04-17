@@ -9,7 +9,7 @@
 }
 
 .demo-window > img {
-    width: 75vw;
+    width: 70vw;
     border: 10px solid var(--secondary-color);
     box-sizing: content-box;
     image-rendering: optimizeQuality
