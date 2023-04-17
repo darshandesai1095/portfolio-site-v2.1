@@ -1,0 +1,86 @@
+.about-me {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color);
+}
+
+.about-me__text {
+    font-size: 1.5rem;
+    line-height: 3.8rem;
+    padding: 10px 50px;
+    margin: 0 200px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+    display: block;
+    /* background-color: var(--tertiary-color); */
+}
+
+.word-highlight {
+    background-color: var(--primary-color);
+    padding: 2px 6px;
+    padding-top: 6px;
+}
+
+.hover {
+    transition: 0.3s;
+    display: inline-block;
+    padding: 3px 6px;
+    padding-top: 6px;
+    line-height: 1;
+    /* animation: shake 2s ease-in-out infinite; */
+}
+
+/* @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: rotate(-1deg);
+    }
+    20%, 40%, 60%, 80% {
+      transform: rotate(1deg);
+    }
+   100% {
+      transform: rotate(0deg);
+    }
+  } */
+
+.hover:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.rotate {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.rotate:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .about-me__text {
+        font-size: 1.1rem;
+        line-height: 2.7rem;
+        padding: 15px 20px;
+        margin: 0 130px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about-me__text {
+        font-size: 0.8rem;
+        line-height: 1.9rem;
+        padding: 15px 20px;
+        margin: 0 130px;
+    }
+}
