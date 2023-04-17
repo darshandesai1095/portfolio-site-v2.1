@@ -1,0 +1,110 @@
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+.nav-top {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-top__name {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    top: -49px;
+    font-size: 0.9rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    z-index: 99999;
+}
+
+.nav-top__full-stop {
+    color: var(--primary-color);
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.front-end-developer {
+    font-size: 0.4rem;
+    font-weight: 400;
+    margin-top: 0px;
+    position: relative;
+    top: -8px;
+    letter-spacing: 4.2px;
+    left: 1px;
+    color: var(--secondary-color);
+}
+
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+
+.nav-bottom {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+.nav-left {
+    background-color: white;
+    position: fixed;
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+
+.nav-right {
+    background-color: white;
+    position: fixed;
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.nav-right__icon {
+    transition: 0.3s;
+    padding: 0px;
+}
+
+.nav-right__icon:hover {
+    cursor: pointer;
+    fill: var(--primary-color);
+    transform: scale(1.3);
+}
