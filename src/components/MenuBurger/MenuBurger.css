@@ -1,0 +1,52 @@
+.menu__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu__burger > * {
+    border-top: 3px solid var(--secondary-color);
+    height: 5px;
+}
+
+.burger__spacer {
+    border: none
+}
+
+.burger__top {
+    width: 20px;
+    margin-top: 2px;
+}
+
+.burger__middle {
+    width: 30px;
+}
+
+.burger__bottom {
+    width: 16px;
+}
+
+.menu__close {
+    transform: scale(1.2);
+    position: relative;
+    left: 8px;
+    top: 2px;
+}
+
+.hide {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.show {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
