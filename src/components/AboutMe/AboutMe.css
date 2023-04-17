@@ -17,6 +17,7 @@
     position: relative;
     margin-bottom: 0px;
     display: block;
+    color: var(--secondary-color);
     /* background-color: var(--tertiary-color); */
 }
 
