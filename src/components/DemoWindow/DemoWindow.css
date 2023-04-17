@@ -1,0 +1,16 @@
+.demo-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.demo-window > img {
+    width: 75vw;
+    border: 10px solid var(--secondary-color);
+    box-sizing: content-box;
+    image-rendering: optimizeQuality
+}
