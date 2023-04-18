@@ -24,10 +24,6 @@
     cursor: pointer;
  }
 
-.menu__text:hover {
-    cursor: pointer;
-}
-
 .menu__items {
     font-size: 0.65rem;
     font-weight: bolder;
@@ -100,4 +96,12 @@
 .menu__item_gif:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+#menu__text {
+    transition: 0.3s !important;
+}
+
+#menu__text:hover {
+    transform: scale(1.3) rotate(-90deg)!important;
 }
