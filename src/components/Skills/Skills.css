@@ -1,6 +1,36 @@
 .skills {
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    background-color: coral;
     color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;;
+}
+
+.skills__grid-container {
+    box-sizing: border-box;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5vh;
+    column-gap: 10vw;
+}
+
+.skills__grid-container > svg {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.skills__grid-container > svg:hover {
+    transform: scale(1);
+}
+
+.grey > path,
+.grey > rect,
+.grey > polygon {
+    /* fill: #adb5bd */
+    opacity: 0.3;
 }
