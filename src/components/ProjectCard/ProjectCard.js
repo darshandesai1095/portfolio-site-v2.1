@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
                     onClick={() => dispatch(toggle(props.gif))}>
                         See GIF
                 </button>
-                <button 
+                <button
                     className="project-card__link-to-site"
                     onClick={() => window.open(props.site, "_blank", "noopener,noreferrer")}>
                         Go To Site!
