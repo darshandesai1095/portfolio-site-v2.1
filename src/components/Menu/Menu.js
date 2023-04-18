@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import MenuBurger from "../MenuBurger/MenuBurger";
 import { useSelector, useDispatch } from 'react-redux'
 import { toggle } from '../../redux/features/GIFPlaybackSlice'
-
 import "./Menu.css"
 
 const Menu = () => {
@@ -47,7 +46,7 @@ const Menu = () => {
                             menuClicked ? 
                                 <p className="menu__item visible">PROJECTS</p> 
                                     : 
-                                <p className="menu__text" onClick={toggleMenu}>MENU</p>
+                                <p className="menu__text" onClick={toggleMenu} id="menu__text">MENU</p>
                         }
                         <p className={`menu__item ${!menuClicked ? "hidden" : "visible"}`}>SKILLS</p>
                         <p className={`menu__item ${!menuClicked ? "hidden" : "visible"}`}>CONTACT</p>
