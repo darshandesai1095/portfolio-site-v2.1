@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-        <form name="contact" method="POST" data-netlify="true"
+        <form name="contact-form" method="POST" data-netlify="true"
               onSubmit={handleSubmit}>
             <input type="hidden" name="subject" 
                    value="Contact form submission from darshandesai.io" />
