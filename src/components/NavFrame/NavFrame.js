@@ -6,14 +6,7 @@ import NavLeft from './NavLeft';
 import NavRight from './NavRight';
 
 const NavFrame = () => {
-
-    const style = {
-        fill: "#495057",
-        margin: "7px",
-        transform: "scale(1)",
-        opacity: "0.9"
-    }
-
+    
     return (
         <>
             <NavTop/>

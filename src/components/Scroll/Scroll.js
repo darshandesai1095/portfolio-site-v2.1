@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import SouthSharpIcon from '@mui/icons-material/SouthSharp';
+import React from "react";
 import ArrowDownwardSharpIcon from '@mui/icons-material/ArrowDownwardSharp';
 import "./Scroll.css"
 import navigate from "../functions/navigate";
