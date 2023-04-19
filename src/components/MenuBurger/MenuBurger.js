@@ -23,7 +23,7 @@ const MenuBurger = (props) => {
             {
                 props.menuClicked || playbackSelected ? 
 
-                <div className={`menu__close ${props.menuClicked ? "hide" : "show"}`}>
+                <div className={`menu__close ${props.menuClicked || playbackSelected ? "show" : "hide"}`}>
                     <CancelIcon style={{fill: `${playbackSelected ? "#ff0a54" : "#495057"}`}}/>
                 </div>
 
