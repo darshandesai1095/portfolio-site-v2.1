@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./AboutMe.css"
+import navigate from "../functions/navigate";
 
 const AboutMe = () => {
 
@@ -65,7 +66,9 @@ const AboutMe = () => {
                 I love learning about new technologies and am excited to take 
                 the leap into Front-End Development. If you're looking for a 
                 dynamic developer to join your team,&nbsp;
-                <span className='word-highlight hover'>hit me up</span>
+                <span 
+                    className='word-highlight hover' 
+                    onClick={(e) => navigate(e, "contact")}>hit me up</span>
                 &nbsp;and let's work on some projects together 
                 &nbsp;<span className='-word-highlight rotate'>&#58;&#41;</span>
             </p>
