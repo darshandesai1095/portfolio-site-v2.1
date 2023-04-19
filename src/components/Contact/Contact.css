@@ -116,4 +116,12 @@ input, textarea {
     z-index: 9;
     font-size: 1.5rem;
     font-weight: bolder;
+    text-align: center
+}
+
+.contact__title span {
+    color: #ff0a54;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    display: inline-block;
 }

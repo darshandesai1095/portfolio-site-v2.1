@@ -20,6 +20,10 @@ const Contact = () => {
         <div className='contact__details'>
             <h4 className="contact__title">
                 Get In Touch!
+                <br/>
+                <span>
+                (Form Error... Email me instead at darshandesai1995@gmail.com)
+                </span>
             </h4>
         </div>
             <div className='form__inputs'>
