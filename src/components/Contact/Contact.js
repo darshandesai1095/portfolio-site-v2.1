@@ -28,7 +28,8 @@ const Contact = () => {
   return (
     <div className="contact">
         <form name="contact" method="POST" data-netlify="true"
-              onSubmit={""}>
+            //   onSubmit={}
+        >
             <input type="hidden" name="subject" 
                    value="Contact form submission from darshandesai.io" />
 
