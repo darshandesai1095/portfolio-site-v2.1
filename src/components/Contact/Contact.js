@@ -10,13 +10,31 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Send form data to server or other endpoint
-        console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-      }
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", name, email, topic, message }),
+        })
+          .then(() => alert("Success!"))
+          .catch((error) => alert(error));
+      };
+    
+      const encode = (data) => {
+        return Object.keys(data)
+          .map(
+            (key) =>
+              encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+          )
+          .join("&");
+      };
 
   return (
     <div className="contact">
-        <form onSubmit={handleSubmit}>
+        <form name="contact" method="POST" data-netlify="true"
+              onSubmit={handleSubmit}>
+            <input type="hidden" name="subject" 
+                   value="Contact form submission from darshandesai.io" />
+
         <div className='contact__details'>
             <h4 className="contact__title">
                 Get In Touch!
@@ -69,7 +87,7 @@ const Contact = () => {
                 </label>
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">Send Message 1</button>
         </form>
 
     </div>
