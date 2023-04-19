@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Scroll from "../Scroll/Scroll";
+
 import "./Home.css"
 
 const Home = () => {
@@ -31,6 +33,7 @@ const Home = () => {
             <h1 className="home__title" style={{left:`${titleOffsetX}px`}}>
                 HE<br/>LLO<span>.</span>
             </h1>
+            <Scroll/>
             <p></p>
 
         </div>
