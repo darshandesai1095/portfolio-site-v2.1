@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./DemoWindow.css"
 import { useSelector } from 'react-redux'
 
@@ -8,7 +8,7 @@ const DemoWindow = (props) => {
 
     return (
         <div className="demo-window">
-            <img src={`${gifUrl}`}/>
+            <img src={`${gifUrl}`} alt={props.altText}/>
         </div>
     )
 }

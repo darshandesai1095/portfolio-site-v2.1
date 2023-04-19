@@ -5,8 +5,6 @@ import AboutMe from './components/AboutMe/AboutMe';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
-import navigate from './components/functions/navigate';
-
 
 function App() {
 
