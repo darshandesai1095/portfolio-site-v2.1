@@ -8,29 +8,27 @@ const Contact = () => {
     const [topic, setTopic] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
       
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+    //     const myForm = event.target;
+    //     const formData = new FormData(myForm);
         
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => alert("Form successfully submitted"))
-          .catch((error) => alert(error));
-      };
+    //     fetch("/", {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //       body: new URLSearchParams(formData).toString(),
+    //     })
+    //       .then(() => alert("Form successfully submitted"))
+    //       .catch((error) => alert(error));
+    //   };
       
-      document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
+    //   document.querySelector("form").addEventListener("submit", handleSubmit);
 
   return (
     <div className="contact">
         <form name="contact" method="POST" data-netlify="true"
-              onSubmit={(e) => handleSubmit(e)}>
+              onSubmit={""}>
             <input type="hidden" name="subject" 
                    value="Contact form submission from darshandesai.io" />
 
