@@ -8,30 +8,30 @@ import Contact from './components/Contact/Contact';
 
 function App() {
 
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.4
-  }
+  // const options = {
+  //   root: null,
+  //   rootMargin: '0px',
+  //   threshold: 0.4
+  // }
 
-  const setupIntersectionObserver = () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Do something when the element enters the viewport
-          entry.target.classList.add("new")
+  // const setupIntersectionObserver = () => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         // Do something when the element enters the viewport
+  //         entry.target.classList.add("new")
 
-        } else {
-            entry.target.classList.remove("new")
-        }
-      })
-    }, options)
+  //       } else {
+  //           entry.target.classList.remove("new")
+  //       }
+  //     })
+  //   }, options)
   
-    const hiddenElements = document.querySelectorAll(".__hidden__")
-    hiddenElements.forEach(el => observer.observe(el))
-  }
+  //   const hiddenElements = document.querySelectorAll(".__hidden__")
+  //   hiddenElements.forEach(el => observer.observe(el))
+  // }
   
-  window.addEventListener("load", setupIntersectionObserver)
+  // window.addEventListener("load", setupIntersectionObserver)
 
   
   return (
