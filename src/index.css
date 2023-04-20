@@ -19,8 +19,13 @@ body {
   --tertiary-color: #f8f8f8;
   --primary-color: #F5D491;
   --primary-color: #F5D491;
-  --primary-color: #FFCE86;
   --primary-color: #FF8A89;
-  --primary-color: #1cfeba;
+
   --primary-color: #B9BFFF;
+  --primary-color: #1cfeba;
+  --primary-color: #FFCE86;
+}
+
+.hidden-form {
+  display: none;
 }

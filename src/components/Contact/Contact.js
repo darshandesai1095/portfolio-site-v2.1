@@ -8,30 +8,33 @@ const Contact = () => {
     const [topic, setTopic] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", name, email, topic, message }),
-        })
-          .then(() => alert("Success!"))
-          .catch((error) => alert(error));
-      };
-    
-      const encode = (data) => {
-        return Object.keys(data)
-          .map(
-            (key) =>
-              encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-          )
-          .join("&");
-      };
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+      
+    //     const myForm = event.target;
+    //     const formData = new FormData(myForm);
+        
+    //     fetch("/", {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //       body: new URLSearchParams(formData).toString(),
+    //     })
+    //       .then(() => alert("Form successfully submitted"))
+    //       .catch((error) => alert(error));
+    //   }
 
   return (
     <div className="contact">
-        <form name="contact" method="POST" data-netlify="true"
-              onSubmit={handleSubmit}>
+        <form name="contactForm" method="POST" data-netlify="true" netlify
+            //   onSubmit={handleSubmit}
+        >
+
+            <input 
+            type='hidden' 
+            name='form-name'
+            value='contactForm' />
+
+
             <input type="hidden" name="subject" 
                    value="Contact form submission from darshandesai.io" />
 
@@ -48,6 +51,7 @@ const Contact = () => {
                 <div className='form__section-1'>
                     <label className='name'>
                         <input
+                            name="name"
                             className='form__input'
                             placeholder='Name'
                             type="text"
@@ -58,6 +62,7 @@ const Contact = () => {
 
                     <label className='email'>
                         <input
+                            name="email"
                             className='form__input'
                             placeholder='Email'
                             type="email"
@@ -69,6 +74,7 @@ const Contact = () => {
 
                     <label className='topic'>
                         <input
+                            name="topic"
                             className='form__input'
                             placeholder='Topic (optional)'
                             type="text"
@@ -80,6 +86,7 @@ const Contact = () => {
 
                 <label className='message'>
                     <textarea
+                        name="message"
                         className='form__input'
                         placeholder='Enter message here...'
                         value={message}

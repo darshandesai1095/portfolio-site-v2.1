@@ -21,7 +21,12 @@
     
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <form name='contactForm' netlify type="hidden" class="hidden-form">
+      <input type='text' name='name' />
+      <input type='email' name='email' />
+      <input type='text' name='topic' />
+      <textarea name='message'></textarea>
+    </form>
     <div id="root"></div>
   </body>
 </html>
