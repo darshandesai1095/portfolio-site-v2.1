@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-        <form name="contactForm" method="POST" data-netlify="true" netlify
+        <form name="contactForm" method="POST" data-netlify="true"
             //   onSubmit={handleSubmit}
         >
 
@@ -42,9 +42,9 @@ const Contact = () => {
             <h4 className="contact__title">
                 Get In Touch!
                 <br/>
-                <span>
+                {/* <span>
                 (Form Error... Email me instead at darshandesai1995@gmail.com)
-                </span>
+                </span> */}
             </h4>
         </div>
             <div className='form__inputs'>
