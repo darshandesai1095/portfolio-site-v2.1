@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import ContentCopySharpIcon from '@mui/icons-material/ContentCopySharp';
-import { Visibility } from '@mui/icons-material';
 
 const Contact = () => {
 
@@ -32,9 +31,9 @@ const Contact = () => {
           setTimeout(() => {setIsCopied(false)}, 1000)
 
     }
-    const handleMouseUp = () => {
-        setIsCopied(false)
-    }
+    // const handleMouseUp = () => {
+    //     setIsCopied(false)
+    // }
 
   return (
     <div className="contact">
