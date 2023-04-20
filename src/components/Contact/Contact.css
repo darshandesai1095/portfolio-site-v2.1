@@ -128,7 +128,7 @@ input, textarea {
 }
 
 .contact__details p:first-of-type {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 0.9rem;
     color: rgba(73, 80, 87, 0.6);
     text-align: center;
@@ -165,8 +165,8 @@ input, textarea {
 
 .copied {
     display: block;
-    font-size: 0.9rem !important;
-    padding-top: 12px;
+    font-size: 0.9rem;
+    padding-top: 10px;
     padding-bottom: 5px;
     font-weight: 600;
     margin: 0;
@@ -178,4 +178,44 @@ input, textarea {
     width: 180px;
     height: 20px;
     background-color: var(--primary-color);
+}
+
+.reach-me {
+    line-height: 1.2rem;
+}
+
+@media only screen and (max-width: 1215px)  {
+    p {
+        font-size: 0.7rem !important;
+    }
+
+    .copy-to-clipboard {
+        display: inline-block;
+        margin: 0px;
+        position: relative;
+        top: 9px
+    }
+
+    .copy-to-clipboard > svg {
+        transform: scale(0.5);
+        color: rgba(73, 80, 87, 1);
+    }
+}
+
+@media only screen and (max-width: 1020px)  {
+    .contact {
+        transform: scale(0.9);
+    }
+
+    .reach-me {
+        line-height: 0.9rem;
+    }
+
+    .contact__details p:first-of-type {
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        color: rgba(73, 80, 87, 0.6);
+        text-align: center;
+    }
+
 }
