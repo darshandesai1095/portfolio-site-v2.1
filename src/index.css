@@ -25,3 +25,7 @@ body {
   --primary-color: #1cfeba;
   --primary-color: #FFCE86;
 }
+
+.hidden-form {
+  display: none;
+}
