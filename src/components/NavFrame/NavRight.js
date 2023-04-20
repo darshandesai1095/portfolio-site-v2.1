@@ -25,7 +25,7 @@ const NavRight = () => {
                 title="LinkedIn" 
                 id="linkedin" 
                 className='nav-right__icon'
-                onClick={window.open()}
+                onClick={() => window.open("https://www.linkedin.com/in/darshandesai95/", "_blank", "noopener,noreferrer")}
                 >
                     <LinkedInIcon
                     style={style} 
@@ -36,7 +36,7 @@ const NavRight = () => {
                 title="GitHub" 
                 id="github" 
                 className='nav-right__icon'
-                onClick={window.open()} 
+                onClick={() => window.open("https://github.com/darshandesai1095", "_blank", "noopener,noreferrer")} 
                 >
                     <GitHubIcon 
                     style={{...style, transform: "scale(0.95)"}} 
@@ -47,7 +47,7 @@ const NavRight = () => {
                 title="Résumé" 
                 id="cv" 
                 className='nav-right__icon' 
-                onClick={window.open()}
+                onClick={() => window.open("Darshan_Desai_20-04-23.pdf", "_blank", "noopener,noreferrer")}
                 >
                     <ArticleIcon 
                     style={style}
