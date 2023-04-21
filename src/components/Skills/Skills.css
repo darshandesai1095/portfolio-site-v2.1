@@ -34,3 +34,63 @@
     /* fill: #adb5bd */
     opacity: 0.3;
 }
+
+@media screen and (max-width: 950px)  {
+    .skills__grid-container {
+        box-sizing: border-box;
+        padding: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 3vh;
+        column-gap: 6vw;
+    }
+
+    .skills__grid-container > svg {
+        transform: scale(0.7);
+    }
+
+    .skills__grid-container > svg:hover {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 810px)  {
+    .skills__grid-container {
+        box-sizing: border-box;
+        padding: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 0.2vh;
+        column-gap: 1vw;
+    }
+
+    .skills__grid-container > svg {
+        transform: scale(0.6);
+    }
+
+    .skills__grid-container > svg:hover {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 650px)  {
+    .skills__grid-container {
+        box-sizing: border-box;
+        padding: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 0.1vh;
+        column-gap: 0.1vw;
+    }
+
+    .skills__grid-container > svg {
+        transform: scale(0.5);
+    }
+
+    .skills__grid-container > svg:hover {
+        transform: scale(0.7);
+    }
+}

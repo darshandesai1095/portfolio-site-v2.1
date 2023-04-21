@@ -19,7 +19,6 @@
     margin-bottom: 0px;
     display: block;
     color: var(--secondary-color);
-    /* background-color: var(--tertiary-color); */
 }
 
 .word-highlight {
@@ -34,23 +33,7 @@
     padding: 3px 6px;
     padding-top: 6px;
     line-height: 1;
-    /* animation: shake 2s ease-in-out infinite; */
 }
-
-/* @keyframes shake {
-    0% {
-      transform: rotate(0deg);
-    }
-    10%, 30%, 50%, 70%, 90% {
-      transform: rotate(-1deg);
-    }
-    20%, 40%, 60%, 80% {
-      transform: rotate(1deg);
-    }
-   100% {
-      transform: rotate(0deg);
-    }
-  } */
 
 .hover:hover {
     cursor: pointer;
@@ -68,11 +51,10 @@
 }
 
 
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
     .about-me__text {
-        font-size: 1.1rem;
-        line-height: 2.7rem;
+        font-size: 1.5rem !important;
+        line-height: 3.5rem !important;
         padding: 15px 20px;
         margin: 0 130px;
     }
@@ -80,9 +62,40 @@
 
 @media only screen and (max-width: 900px) {
     .about-me__text {
-        font-size: 0.8rem;
-        line-height: 1.9rem;
+        font-size: 0.9rem !important;
+        line-height: 0.8rem;
+        font-weight: 300;
         padding: 15px 20px;
         margin: 0 130px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .about-me__text {
+        font-size: 0.9rem !important;
+        line-height: 0.8rem;
+        font-weight: 300;
+        padding: 15px 20px;
+        margin: 0 130px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .about-me__text {
+        font-size: 0.7rem !important;
+        line-height: 0.8rem;
+        font-weight: 200;
+        padding: 10px 20px;
+        margin: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .about-me__text {
+        font-size: 0.5rem !important;
+        line-height: 1.2rem;
+        font-weight: 100;
+        padding: 10px 20px;
+        margin: 0 100px;
     }
 }
