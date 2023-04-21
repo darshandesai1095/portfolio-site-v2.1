@@ -100,7 +100,7 @@ const Contact = () => {
                         <input
                             name="email"
                             className='form__input'
-                            placeholder='Email'
+                            placeholder='Your Email'
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}

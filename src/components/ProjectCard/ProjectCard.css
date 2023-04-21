@@ -54,3 +54,72 @@
     background-color: var(--secondary-color) !important;
     color: var(--tertiary-color) !important;
 } 
+
+
+@media screen and (max-width: 1400px) {
+    .project-card {
+        width: 200px;
+        height: 380px;
+        padding: 10px 40px;
+    }
+
+    .project-card__heading {
+        line-height: 2rem;
+        font-size: 1.5rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .project-card__text {
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .project-card__buttons > button {
+        margin: 5px;
+        padding: 8px 12px;
+        font-weight: 600;
+        border: 1px solid var(--secondary-color);
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .projects-page {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+
+    .project-card {
+        width: 60vw;
+        height: 20vh;
+        padding: 10px 50px;
+    }
+
+    .project-card__heading {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .project-card__text {
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    .project-card__buttons > button {
+        margin: 5px;
+        padding: 8px 12px;
+        font-weight: 600;
+        border: 1px solid var(--secondary-color);
+        font-size: 0.5rem;
+    }
+}
