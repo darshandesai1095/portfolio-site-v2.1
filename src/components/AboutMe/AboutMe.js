@@ -24,7 +24,7 @@ const AboutMe = () => {
                 dynamic developer to join your team,&nbsp;
                 <span 
                     className='word-highlight hover' 
-                    onClick={(e) => navigate(e, "contact")}>hit me up</span>
+                    onClick={(e) => navigate(e, "contact")}>hit me up,</span>
                 &nbsp;and let's work on some projects together 
                 &nbsp;<span className='-word-highlight rotate'>&#58;&#41;</span>
             </p>
