@@ -47,7 +47,7 @@ const NavRight = () => {
                 title="Résumé" 
                 id="cv" 
                 className='nav-right__icon' 
-                onClick={() => window.open("Darshan_Desai_20-04-23.pdf", "_blank", "noopener,noreferrer")}
+                onClick={() => window.open("Darshan_Desai_27-04-23.pdf", "_blank", "noopener,noreferrer")}
                 >
                     <ArticleIcon 
                     style={style}
