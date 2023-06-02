@@ -4,18 +4,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 
-// import { Tooltip } from "@mui/material";
-
 const NavRight = () => {
 
     const style = {
-        // fill: "#495057",
         margin: "5px",
         transform: "scale(1)",
         opacity: "1"
     }
-
-
 
     return (
         <div className="nav-right">
