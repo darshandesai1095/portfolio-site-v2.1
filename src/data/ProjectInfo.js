@@ -29,7 +29,7 @@ const projects = [
         gif: "/Quizzical.gif",
         altText: `Quizzical GIF`,
         title: "Project 3: Quizzical",
-        desc: `Simple quiz game where users are tasked with answering random trivia based questions. Created using
+        desc: `A quiz game where users are tasked with answering random trivia based questions. Created using
         the Open Trivia Database (OTDB) API.`,
         react: true,
         redux: false,
