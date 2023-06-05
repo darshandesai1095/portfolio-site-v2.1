@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import "./AboutMe.css"
 import navigate from "../functions/navigate";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 
 const AboutMe = () => {
 
