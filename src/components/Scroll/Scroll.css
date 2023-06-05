@@ -53,9 +53,9 @@
     }
   }
 
-/* .menu__item.visible:hover {
-    background-color: var(--primary-color);
-    padding: 3px 4.5px;
-    padding-top: 5px;
-    transform: scale(1.2);
-} */
+  @media only screen and (max-width: 700px) {
+    .scroll__main {
+        visibility: hidden;
+
+    }
+  }
