@@ -5,18 +5,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const Home = () => {
 
-  const [offsetY, setOffsetY] = useState(0);
   const [innerWidth, setInnerWidth] = useState(window.innerWidth)
-  const [bkgWidth, setBkgWidth] = useState((700 - window.pageYOffset) / 14)
-  const [titleOffsetX, setTitleOffsetX] = useState(window.pageYOffset*1.5 + innerWidth/2.7)
 
   useEffect(() => {
-      function handleScroll() {
-        setOffsetY(window.pageYOffset)
-        setInnerWidth(window.innerWidth)
-        setBkgWidth((700 - offsetY) / 14)
-        setTitleOffsetX(window.pageYOffset*1.5+innerWidth/2.7)
-      }
+      const handleScroll = () => setInnerWidth(window.innerWidth)
   
       window.addEventListener('scroll', handleScroll)
       window.addEventListener('resize', handleScroll)
@@ -25,7 +17,7 @@ const Home = () => {
         window.removeEventListener('scroll', handleScroll)
         window.removeEventListener('resize', handleScroll)
       }
-    }, [offsetY, innerWidth])
+    }, [innerWidth])
 
   const { scrollYProgress } = useScroll()
   const xTitle = useTransform(scrollYProgress, [0, 0.25], [0, innerWidth])
@@ -34,7 +26,6 @@ const Home = () => {
   return (
       <div className="home">
           <motion.div  className="home__bkg" 
-                // style={{width:`${bkgWidth}vw`}}
                 style={{ x: xBkg }}
           />
           <motion.h1 className="home__title" style={{ x: xTitle }}>
