@@ -12,6 +12,7 @@
 .home__bkg {
     background-color: var(--primary-color);
     height: 100vh;
+    width: 50vw;
     position: fixed;
     left: 0px;
     z-index: 9;
@@ -35,8 +36,8 @@
 
 @media only screen and (max-width: 900px) {
     .home__title {
-        font-size: 7rem;
-        line-height: 7rem;
+        font-size: 6rem;
+        line-height: 6rem;
         letter-spacing: 0.5px;
     }
 
