@@ -3,7 +3,6 @@
     width: 100vw;
     background-color: var(--tertiary-color);
     box-sizing: border-box;
-    padding: 100px;
     color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -16,12 +15,13 @@ form {
     box-sizing: border-box;
     background-color: var(--tertiary-color);
     display: flex;
-    height: calc(100vh - 180px);
-    width: calc(50vw - 180px);
+    /* height: calc(100vh - 180px); */
+    /* width: calc(50vw - 180px); */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
+    width: 450px;
 }
 
 .form__inputs {
@@ -76,22 +76,6 @@ textarea:focus {
     border: 2.5px solid var(--primary-color)
 }
 
-/*
-
-input, textarea {
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
-}
-
-.message {
-    margin-top: 5px;
-}
-
-.message > textarea {
-    height: 240px;
-    padding: 10px;
-} */
-
 .contact button {
     display: inline-block;
     width: 150px;
@@ -112,7 +96,7 @@ input, textarea {
 }
 
 .contact__title {
-    margin-bottom: -5px;
+    margin-bottom: 0px;
     z-index: 9;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -185,6 +169,10 @@ input, textarea {
 }
 
 @media only screen and (max-width: 1215px)  {
+    form {
+        width: 450px;
+    }
+
     p {
         font-size: 0.7rem !important;
     }
@@ -200,9 +188,19 @@ input, textarea {
         transform: scale(0.5);
         color: rgba(73, 80, 87, 1);
     }
+
+    .form__input {
+        font-size: 0.9rem;
+        border: 2.5px solid var(--secondary-color);
+        padding: 12px;
+    }
 }
 
 @media only screen and (max-width: 1020px)  {
+    form {
+        width: 300px;
+    }
+
     .contact {
         transform: scale(0.9);
     }
@@ -218,4 +216,9 @@ input, textarea {
         text-align: center;
     }
 
+    .form__input {
+        font-size: 0.8rem;
+        border: 2.5px solid var(--secondary-color);
+        padding: 10px;
+    }
 }
